@@ -7,8 +7,6 @@ const Product1 = require("../models/product.model");
 
 const router = express.Router();
 
-
-
 router.post("", async(req,res) =>
 {
     try
@@ -26,8 +24,6 @@ router.post("", async(req,res) =>
         return res.status(500).send({message : error.message});
     }
 })
-
-
 
 router.get("", async(req,res) =>
 {
@@ -101,8 +97,6 @@ router.get("/:id", async(req,res) =>
     }
 });
 
-
-
 router.patch("/:id", async(req,res) =>
 {
     try
@@ -123,8 +117,6 @@ router.patch("/:id", async(req,res) =>
         return res.status(500).send({message : error.message});
     }
 })
-
-
 
 router.delete("/:id", async(req,res) =>
 {
